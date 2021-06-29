@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
+        /*
         Funcionario funcionario = new Funcionario();
 
         Scanner scanner = new Scanner( System.in );
@@ -29,8 +30,15 @@ public class Principal {
         funcionario.setSalarioBruto(4500);
         funcionario.setTotalDesconto(1000);
         funcionario.setTotalAcrescimo(1500);
-        SET MANUAL DE VALORES */
+        SET MANUAL DE VALORES
+        */
 
-        System.out.println("O salario final do funcionario e: " + funcionario.calculaSalarioLiquido());
+
+        //System.out.println("O salario final do funcionario e: " + funcionario.calculaSalarioLiquido());
+
+        Exercicio_IMC exercicio_imc = new Exercicio_IMC("M",100,1.89f);
+        System.out.println("A condição de imc eh: " + exercicio_imc.calculaImc());
+
+
     }
 }

@@ -4,6 +4,10 @@ public class Funcionario {
         private float totalAcrescimo;
         private float totalDesconto;
 
+        public Funcionario (){
+            System.out.println("Iniciando um objeto da classe Funcionario");
+        }
+
         public String getNome() {
             return nome;
         }
