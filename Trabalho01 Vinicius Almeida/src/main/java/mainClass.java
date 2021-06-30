@@ -1,4 +1,3 @@
-import java.util.LinkedList;
 import java.util.List;
 
 public class mainClass {
@@ -14,14 +13,14 @@ public class mainClass {
         MCL35M objMCL = new MCL35M(900,0.1f,345);
         W012 objW = new W012(870,0.05f,350);
 
-        List<Integer> carro = new LinkedList<>();
-        carro.add(objMCL.getVelMax());
-        carro.add(objW.getVelMax());
-        
-
-
-
+        if(objW.calculaVMaxReal() > objMCL.calculaVMaxReal())
+        {
+            System.out.println("O carro mais rápido é o W012");
+        }
+        else
+            System.out.println("O carro mais rapido é MCL35M");
     }
+
 }
 
 // LISTA A FAZER: Herança   OK, classe abstrata  OK, metodo abstrato  OK, sobreposiçao de metodo    OK, utilizaçao de lista,

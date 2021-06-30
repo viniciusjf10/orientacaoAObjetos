@@ -5,6 +5,14 @@ public abstract class DadosPiloto {
     public String nacionalidade;
     public int numeroVitorias;
 
+    public int getNumeroVitorias() {
+        return numeroVitorias;
+    }
+
+    public void setNumeroVitorias(int numeroVitorias) {
+        this.numeroVitorias = numeroVitorias;
+    }
+
     public abstract void AjusteVitorias();
     /* Criação de classe abstrata que sera usada em outra parte do codigo para atualizar o valor de vitórias. */
 
