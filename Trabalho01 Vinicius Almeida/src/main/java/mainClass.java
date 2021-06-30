@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.List;
+
 public class mainClass {
     public static void main(String[] args) {
         Charles objCharles = new Charles();
@@ -8,9 +11,18 @@ public class mainClass {
 
         objCharles.AjusteVitorias(); //alteração de dados em um metodo abstrato que esta em uma classe abstrata.
 
+        MCL35M objMCL = new MCL35M(900,0.1f,345);
+        W012 objW = new W012(870,0.05f,350);
+
+        List<Integer> carro = new LinkedList<>();
+        carro.add(objMCL.getVelMax());
+        carro.add(objW.getVelMax());
+        
+
+
 
     }
-} //SOBREPOSIÇÃO DE METODO ; LISTA ; COLOCAR TAD NA LISTA E CHAMAR METODOS POLIMORFICOS ; ENCAPSULAMENTO ; CONSTRUTORES ; JUNIT ; CÓDIGO LIMPO
+}
 
 // LISTA A FAZER: Herança   OK, classe abstrata  OK, metodo abstrato  OK, sobreposiçao de metodo    OK, utilizaçao de lista,
 
